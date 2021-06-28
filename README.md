@@ -1,1 +1,1 @@
-https://aleksey-bortnik.github.io/Productly-layout/
+Productly-layout
