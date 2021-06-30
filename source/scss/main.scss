@@ -14,14 +14,7 @@
 
 @import "./components//footer";
 
-// ===================================only general or time selectors!===================================
+@import "./abstracts/variables";
 
-* {
-  box-sizing: border-box;
-}
+@import "./abstracts/mixins";
 
-.site__container {
-  margin: 0 auto;
-  max-width: 1140px;
-  font-family: Poppins;
-}

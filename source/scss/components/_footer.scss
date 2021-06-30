@@ -16,22 +16,14 @@
 }
 
 .footer__description {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 30px;
-  color: #2f281e;
+  @include text-formatter($size: 20px, $line-height: 30px);
 }
 
 .footer__description-input {
   display: block;
   width: 280px;
   height: 57px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 30px;
-  color: #2f281e;
+  @include text-formatter;
 }
 
 .footer__links {
@@ -42,11 +34,7 @@
 
 .footer__links-decorator {
   text-decoration: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 35px;
-  color: #544837;
+  @include text-formatter($size: 16px, $line-height35px);
 }
 
 .footer__input {
@@ -54,10 +42,7 @@
   border-radius: 3px;
   width: 325px;
   height: 48px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 28px;
+  @include text-formatter($line-height: 28px);
 
   color: #bcd0e5;
 }
@@ -65,21 +50,18 @@
 .footer__input-button {
   width: 131px;
   height: 39px;
-  background: #ff9900;
+  background: $secondary-color;
   border-radius: 4px;
   border: 0;
   margin: 20px 0px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
+  @include text-formatter($line-height: 24px);
   text-align: center;
-  color: #ffffff;
+  color: $primary-color;
 }
 
 .footer__input-button:hover {
-  background-color: #ffffff;
-  border: 1px solid #ff9900;
+  background-color: $primary-color;
+  border: 1px solid $secondary-color;
   color: #000000;
 }
 

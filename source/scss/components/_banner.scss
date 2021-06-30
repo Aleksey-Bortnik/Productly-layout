@@ -3,12 +3,19 @@
   width: 100%;
   height: 100%;
 }
+
 .banner__section-title {
   width: 518px;
   height: 108px;
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 54px;
+  @include title-formatter(
+    $size: 36px,
+    $line-height: 54px,
+    $family: $font,
+    $style: normal,
+    $weight: bold,
+    $color: $title-color
+  ) {
+  }
 }
 
 .banner__section-text {
@@ -16,15 +23,11 @@
   width: 458px;
   height: 95px;
   padding-right: 120px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
+  @include text-formatter;
 }
 
 .banner__section-image {
-  background-image: url("../../source/img/banner/banner.png");
+  background-image: url("../../source/assets/img/banner/banner.png");
   width: 605px;
   height: 496px;
   background-position: center;
@@ -33,19 +36,16 @@
 .banner__section-buttons-container {
   display: flex;
   margin-top: 45px;
+  @include text-formatter;
 }
 
 .banner__section-start-button {
   width: 179px;
   height: 53px;
-  background: #ff9900;
+  background: $secondary-color;
   border-radius: 4px;
-  color: #ffffff;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
+  color: $primary-color;
+  @include text-formatter;
   border: 0;
 }
 
@@ -53,18 +53,16 @@
   width: 179px;
   height: 53px;
   margin: 0 30px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  @include text-formatter($line-height) {
+    $line-height: 24px;
+  }
   text-decoration-line: underline;
-  color: #ff9900;
+  color: $secondary-color;
   background: 0;
   border: 0;
 }
 
 .banner__section-video-link::before {
-  content: url("../../source/img/banner/banner-button-triangle.png");
+  content: url("../../source/assets/img/banner/banner-button-triangle.png");
   margin: 0 8px;
 }

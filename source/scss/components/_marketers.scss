@@ -3,40 +3,24 @@
   justify-content: space-between;
   max-width: 1100px;
   max-height: 609px;
-  font-family: Poppins;
-  margin-bottom: 1061px;
+  margin-bottom: 170px;
 
   .marketers__section-description {
     max-width: 486px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 26px;
-    color: #2f281e;
+    @include text-formatter;
 
     .marketers__section-title {
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 26px;
-      color: #2f281e;
+      @include title-formatter ($size:54px);
     }
 
     .marketers__section-text {
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 26px;
-      color: #544837;
+      @include text-formatter;
     }
   }
 }
 
 .marketers__section-image {
-  background-image: url("../../source/img/marketers/marketers.png");
+  background-image: url("../../source/assets/img/marketers/marketers.png");
   width: 542px;
   height: 609px;
   margin-left: 5%;

@@ -9,11 +9,7 @@
   height: 100%;
 
   .tools__section-title {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
+    @include title-formatter();
     text-align: center;
     padding: 0 340px;
     margin-top: 108px;
@@ -25,37 +21,32 @@
   justify-content: space-between;
 
   .tools__section-card-click {
-    background-image: url("../../source/img/tools/tools-cursor.png");
+    background-image: url("../../source/assets/img/tools/tools-cursor.png");
     width: 50px;
     height: 50px;
   }
 
   .tools__section-card-social {
-    background-image: url("../../source/img/tools/tools-social.png");
+    background-image: url("../../source/assets/img/tools/tools-social.png");
     width: 50px;
     height: 50px;
   }
 
   .tools__section-card-preference {
-    background-image: url("../../source/img/tools/tools-heart.png");
+    background-image: url("../../source/assets/img/tools/tools-heart.png");
     width: 50px;
     height: 50px;
   }
 
   .tools__section-card-clock {
-    background-image: url("../../source/img/tools/tools-clock.png");
+    background-image: url("../../source/assets/img/tools/tools-clock.png");
     width: 50px;
     height: 50px;
   }
 }
 
 .tools-card-description {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
-  color: #2f281e;
+  @include text-formatter;
   margin: 30px 0 13px 0;
 }
 
@@ -75,13 +66,9 @@
   border-radius: 4px;
   width: 175px;
   height: 53px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  background: #ff9900;
-  color: #ffffff;
+  @include text-formatter;
+  background: $secondary-color;
+  color: $primary-color;
   border: 0;
   margin-bottom: 200px;
 }

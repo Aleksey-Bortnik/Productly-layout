@@ -57,6 +57,10 @@
   color: #173a56;
 }
 
+.nav__container-button-in:hover {
+  background-color: #ff9900;
+}
+
 .nav__container-button-up {
   width: 102px;
   height: 46px;
@@ -98,7 +102,7 @@
 }
 
 .banner__section-image {
-  background-image: url("../../source/img/banner/banner.png");
+  background-image: url("../../source/assets/img/banner/banner.png");
   width: 605px;
   height: 496px;
   background-position: center;
@@ -139,7 +143,7 @@
 }
 
 .banner__section-video-link::before {
-  content: url("../../source/img/banner/banner-button-triangle.png");
+  content: url("../../source/assets/img/banner/banner-button-triangle.png");
   margin: 0 8px;
 }
 
@@ -171,25 +175,25 @@
 }
 
 .tools__section-cards-container .tools__section-card-click {
-  background-image: url("../../source/img/tools/tools-cursor.png");
+  background-image: url("../../source/assets/img/tools/tools-cursor.png");
   width: 50px;
   height: 50px;
 }
 
 .tools__section-cards-container .tools__section-card-social {
-  background-image: url("../../source/img/tools/tools-social.png");
+  background-image: url("../../source/assets/img/tools/tools-social.png");
   width: 50px;
   height: 50px;
 }
 
 .tools__section-cards-container .tools__section-card-preference {
-  background-image: url("../../source/img/tools/tools-heart.png");
+  background-image: url("../../source/assets/img/tools/tools-heart.png");
   width: 50px;
   height: 50px;
 }
 
 .tools__section-cards-container .tools__section-card-clock {
-  background-image: url("../../source/img/tools/tools-clock.png");
+  background-image: url("../../source/assets/img/tools/tools-clock.png");
   width: 50px;
   height: 50px;
 }
@@ -266,7 +270,7 @@
 }
 
 .designers__section-image {
-  background-image: url("../../source/img/design/design.png");
+  background-image: url("../../source/assets/img/design/design.png");
   width: 520px;
   height: 573px;
   margin-left: 5%;
@@ -318,7 +322,7 @@
 }
 
 .product-manager__section-image {
-  background-image: url("../../source/img/product/product.png");
+  background-image: url("../../source/assets/img/product/product.png");
   width: 534px;
   height: 521px;
   margin-left: 5%;
@@ -334,7 +338,7 @@
   max-width: 1100px;
   max-height: 609px;
   font-family: Poppins;
-  margin-bottom: 1061px;
+  margin-bottom: 170px;
 }
 
 .marketers__section .marketers__section-description {
@@ -366,7 +370,7 @@
 }
 
 .marketers__section-image {
-  background-image: url("../../source/img/marketers/marketers.png");
+  background-image: url("../../source/assets/img/marketers/marketers.png");
   width: 542px;
   height: 609px;
   margin-left: 5%;
@@ -401,21 +405,21 @@
 }
 
 .strategies__section-cards-container .strategies__section-image-search {
-  background-image: url("../../source/img/strategies/strategies-search.png");
+  background-image: url("../../source/assets/img/strategies/strategies-search.png");
   width: 348px;
   height: 185px;
   margin-right: 25px;
 }
 
 .strategies__section-cards-container .strategies__section-image-structure {
-  background-image: url("../../source/img/strategies/strategies-structure.png");
+  background-image: url("../../source/assets/img/strategies/strategies-structure.png");
   width: 348px;
   height: 185px;
   margin-right: 25px;
 }
 
 .strategies__section-cards-container .strategies__section-image-time {
-  background-image: url("../../source/img/strategies/strategies-time.png");
+  background-image: url("../../source/assets/img/strategies/strategies-time.png");
   width: 348px;
   height: 185px;
 }
@@ -553,6 +557,5 @@
 .site__container {
   margin: 0 auto;
   max-width: 1140px;
-  font-family: Poppins;
 }
 /*# sourceMappingURL=main.css.map */

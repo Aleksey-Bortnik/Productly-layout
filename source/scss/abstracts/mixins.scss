@@ -1,0 +1,22 @@
+@mixin text-formatter ($family, $style, $weight, $size, $line-height, $color) {
+  font: {
+    family: $font;
+    style: normal;
+    weight: 500;
+    size: 16px;
+  }
+  line-height: 26px;
+  color: red; //testing color
+}
+
+@mixin title-formatter ($size, $line-height, $family, $style, $weight, $color) {
+  font: {
+    size: 36px;
+    height: 54px;
+    family: $font;
+    style: normal;
+    weight: bold;
+  }
+  color: red; //testing color
+}
+
