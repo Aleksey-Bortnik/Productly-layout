@@ -1,6 +1,11 @@
+.header__section-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
 .header__container {
   display: flex;
-  width: 1140px;
   height: 78px;
   margin-top: 20px;
   margin-bottom: 33px;
@@ -15,6 +20,15 @@
 .logo {
   display: flex;
   margin: 25px 11px;
+}
+
+.logo__main-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
 }
 
 .nav__container {
@@ -33,7 +47,12 @@
 .nav__link {
   text-decoration: 0;
   margin: 0 15px;
-  color: #000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
 }
 
 .nav__btn-container {
@@ -51,14 +70,15 @@
   background: #ffffff;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  color: #173a56;
+  line-height: 28px;
+  color: red;
 }
 
 .nav__container-button-in:hover {
   background-color: #ff9900;
+  color: #ffffff;
 }
 
 .nav__container-button-up {
@@ -69,10 +89,16 @@
   background: #ff9900;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  color: red;
   color: #ffffff;
+}
+
+.nav__container-button-up:hover {
+  background-color: #ffffff;
+  color: #173a56;
 }
 
 .banner__section {
@@ -84,9 +110,12 @@
 .banner__section-title {
   width: 518px;
   height: 108px;
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 26px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
   line-height: 54px;
+  color: red;
 }
 
 .banner__section-text {
@@ -96,9 +125,10 @@
   padding-right: 120px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 28px;
+  color: red;
 }
 
 .banner__section-image {
@@ -111,6 +141,12 @@
 .banner__section-buttons-container {
   display: flex;
   margin-top: 45px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
 }
 
 .banner__section-start-button {
@@ -121,9 +157,10 @@
   color: #ffffff;
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  color: red;
   border: 0;
 }
 
@@ -133,9 +170,10 @@
   margin: 0 30px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  color: red;
   text-decoration-line: underline;
   color: #ff9900;
   background: 0;
@@ -159,11 +197,12 @@
 }
 
 .tools__section-title-wrap .tools__section-title {
+  font-size: 16px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
   line-height: 54px;
+  color: red;
   text-align: center;
   padding: 0 340px;
   margin-top: 108px;
@@ -201,15 +240,21 @@
 .tools-card-description {
   font-family: Poppins;
   font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
-  color: #2f281e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
   margin: 30px 0 13px 0;
 }
 
 .tools__card-text {
   display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
   width: 240px;
   height: 42px;
   margin: 0 0 60px 0;
@@ -226,9 +271,10 @@
   height: 53px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  color: red;
   background: #ff9900;
   color: #ffffff;
   border: 0;
@@ -238,7 +284,6 @@
 .designers__section {
   display: flex;
   justify-content: space-between;
-  font-family: Poppins;
   margin-bottom: 84px;
 }
 
@@ -246,18 +291,19 @@
   max-width: 486px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #2f281e;
+  line-height: 28px;
+  color: red;
 }
 
 .designers__section-description .designers__section-title {
+  font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
   line-height: 54px;
-  color: #2f281e;
+  color: red;
 }
 
 .designers__section-description .designers__section-text {
@@ -265,8 +311,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #544837;
+  line-height: 28px;
+  color: red;
 }
 
 .designers__section-image {
@@ -279,7 +325,6 @@
 .product-manager__section {
   display: flex;
   justify-content: space-between;
-  font-family: Poppins;
   margin-bottom: 64px;
 }
 
@@ -288,11 +333,12 @@
 }
 
 .product-manager__section-description .product-manager__section-title {
+  font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
   line-height: 54px;
-  color: #2f281e;
+  color: red;
 }
 
 .product-manager__section-description .product-manager__section-text {
@@ -302,8 +348,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #544837;
+  line-height: 28px;
+  color: red;
 }
 
 .product-manager__section-description .product-manager__section-text-wrapper {
@@ -313,8 +359,8 @@
   height: 92px;
 }
 
-.product-manager__section-description .product-manager__section-icon {
-  background-image: url("../../source/img/product/product-icon.png");
+.product-manager__section-icon {
+  background-image: url("../../source/assets/img/product/product_icon.png");
   width: 35px;
   height: 35px;
   padding: 17px;
@@ -325,7 +371,6 @@
   background-image: url("../../source/assets/img/product/product.png");
   width: 534px;
   height: 521px;
-  margin-left: 5%;
 }
 
 .product-manager-title-shift {
@@ -335,9 +380,7 @@
 .marketers__section {
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
   max-height: 609px;
-  font-family: Poppins;
   margin-bottom: 170px;
 }
 
@@ -345,19 +388,19 @@
   max-width: 486px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #2f281e;
+  line-height: 28px;
+  color: red;
 }
 
 .marketers__section .marketers__section-description .marketers__section-title {
+  font-size: 16px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 26px;
-  color: #2f281e;
+  line-height: 54px;
+  color: red;
 }
 
 .marketers__section .marketers__section-description .marketers__section-text {
@@ -365,8 +408,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #544837;
+  line-height: 28px;
+  color: red;
 }
 
 .marketers__section-image {
@@ -379,24 +422,24 @@
 .strategies__section {
   display: flex;
   flex-direction: column;
-  font-family: Poppins;
 }
 
 .strategies__section .strategies__section-title {
+  font-size: 16px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 51px;
-  color: #2f281e;
+  line-height: 54px;
+  color: red;
 }
 
 .strategies__section .strategies__section-description {
+  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  color: #544837;
+  line-height: 28px;
+  color: red;
 }
 
 .strategies__section-cards-container {
@@ -430,11 +473,12 @@
 
 .strategies__section-title {
   display: block;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 34px;
-  color: #2f281e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
 }
 
 .strategies__section-title:hover {
@@ -479,22 +523,24 @@
 }
 
 .footer__description {
+  font-family: Poppins;
   font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 30px;
-  color: #2f281e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
 }
 
 .footer__description-input {
   display: block;
   width: 280px;
   height: 57px;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 30px;
-  color: #2f281e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: red;
 }
 
 .footer__links {
@@ -505,11 +551,12 @@
 
 .footer__links-decorator {
   text-decoration: 0;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 35px;
-  color: #544837;
+  line-height: 28px;
+  color: red;
 }
 
 .footer__input {
@@ -517,10 +564,12 @@
   border-radius: 3px;
   width: 325px;
   height: 48px;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 16px;
   line-height: 28px;
+  color: red;
   color: #bcd0e5;
 }
 
@@ -531,10 +580,12 @@
   border-radius: 4px;
   border: 0;
   margin: 20px 0px;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  color: red;
   text-align: center;
   color: #ffffff;
 }
@@ -550,12 +601,23 @@
   flex-direction: column;
 }
 
-* {
-  box-sizing: border-box;
+.site__content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.site__container {
-  margin: 0 auto;
-  max-width: 1140px;
+.header__section-container,
+.banner__section-container,
+.tools__section-container,
+.designers__section-container,
+.product-manager__section-container,
+.marketers__section-container,
+.strategies__section-container,
+.tools__section-container,
+.footer__section-container {
+  max-width: 1400px;
 }
 /*# sourceMappingURL=main.css.map */

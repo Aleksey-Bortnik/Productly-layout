@@ -52,6 +52,7 @@
 
 .tools__card-text {
   display: block;
+  @include text-formatter;
   width: 240px;
   height: 42px;
   margin: 0 0 60px 0;

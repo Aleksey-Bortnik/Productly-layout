@@ -7,15 +7,7 @@
 .banner__section-title {
   width: 518px;
   height: 108px;
-  @include title-formatter(
-    $size: 36px,
-    $line-height: 54px,
-    $family: $font,
-    $style: normal,
-    $weight: bold,
-    $color: $title-color
-  ) {
-  }
+  @include title-formatter(26px, 54px);
 }
 
 .banner__section-text {
@@ -53,9 +45,7 @@
   width: 179px;
   height: 53px;
   margin: 0 30px;
-  @include text-formatter($line-height) {
-    $line-height: 24px;
-  }
+  @include text-formatter();
   text-decoration-line: underline;
   color: $secondary-color;
   background: 0;

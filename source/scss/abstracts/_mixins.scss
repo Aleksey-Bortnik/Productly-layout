@@ -1,0 +1,21 @@
+@mixin text-formatter($font-size: 16px, $line-height: 28px) {
+  font: {
+    family: Poppins;
+    style: normal;
+    weight: 500;
+    size: $font-size;
+  }
+  line-height: $line-height;
+  color: red; //testing color
+}
+
+@mixin title-formatter($font-size: 16px, $line-height: 54px) {
+  font: {
+    size: $font-size;
+    family: Poppins;
+    style: normal;
+    weight: bold;
+  }
+  line-height: $line-height;
+  color: red; //testing color
+}
