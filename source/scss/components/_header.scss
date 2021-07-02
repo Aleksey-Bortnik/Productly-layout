@@ -1,6 +1,5 @@
 .header__section-container {
   display: flex;
-  // justify-content: center;
   justify-content: space-between;
   max-width: 1400px;
 }
@@ -16,14 +15,15 @@
   display: flex;
   height: inherit;
   margin-right: 255px;
-}
 
-.logo {
-  display: flex;
-  margin: 25px 11px;
-}
-.logo__main-title {
-  @include text-formatter();
+  & {
+    display: flex;
+    margin: 25px 11px;
+  }
+
+  &__main-title {
+    @include text-formatter();
+  }
 }
 
 .nav__container {

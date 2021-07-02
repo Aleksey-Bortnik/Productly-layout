@@ -4,25 +4,24 @@
   max-height: 609px;
   margin-bottom: 170px;
 
-  .marketers__section-description {
+  &-description {
     max-width: 486px;
     @include text-formatter;
 
-    .marketers__section-title {
+    &-title {
       display: flex;
       flex-direction: column;
       @include title-formatter();
     }
 
-    .marketers__section-text {
+    &-text {
       @include text-formatter();
     }
   }
-}
 
-.marketers__section-image {
-  background-image: url("../../source/assets/img/marketers/marketers.png");
-  width: 542px;
-  height: 609px;
-  margin-left: 5%;
+    &-image {
+    background-image: url("../../source/assets/img/marketers/marketers.png");
+    width: 542px;
+    height: 609px;
+  }
 }

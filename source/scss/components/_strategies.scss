@@ -2,56 +2,56 @@
   display: flex;
   flex-direction: column;
 
-  .strategies__section-title {
+  &-title {
     @include title-formatter;
   }
 
-  .strategies__section-description {
-   @include text-formatter;
-  }
-}
-
-.strategies__section-cards-container {
-  display: flex;
-  justify-content: space-between;
-
-  .strategies__section-image-search {
-    background-image: url("../../source/assets/img/strategies/strategies-search.png");
-    width: 348px;
-    height: 185px;
-    margin-right: 25px;
+  &-description {
+    @include text-formatter;
   }
 
-  .strategies__section-image-structure {
-    background-image: url("../../source/assets/img/strategies/strategies-structure.png");
-    width: 348px;
-    height: 185px;
-    margin-right: 25px;
+  &-cards-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-image-search {
+      background-image: url("../../source/assets/img/strategies/strategies-search.png");
+      width: 348px;
+      height: 185px;
+      margin-right: 25px;
+    }
+
+    &-image-structure {
+      background-image: url("../../source/assets/img/strategies/strategies-structure.png");
+      width: 348px;
+      height: 185px;
+      margin-right: 25px;
+    }
+
+    &-image-time {
+      background-image: url("../../source/assets/img/strategies/strategies-time.png");
+      width: 348px;
+      height: 185px;
+    }
   }
 
-  .strategies__section-image-time {
-    background-image: url("../../source/assets/img/strategies/strategies-time.png");
-    width: 348px;
-    height: 185px;
+  &-accent {
+    font-weight: 700;
   }
-}
 
-.strategies__section-accent {
-  font-weight: 700;
-}
+  &-title {
+    display: block;
+    @include text-formatter;
+  }
 
-.strategies__section-title {
-  display: block;
-  @include text-formatter;
-}
+  &-title:hover {
+    color: $secondary-color;
+  }
 
-.strategies__section-title:hover {
-  color: $secondary-color;
-}
-
-.strategies__section-carousell {
-  display: flex;
-  justify-content: center;
+  &-carousell {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .circle {
@@ -64,8 +64,8 @@
   background-color: #ddd4d4;
   margin: 5px;
   margin-bottom: 120px;
-}
 
-.circle:hover {
-  background-color: $secondary-color;
+  &:hover {
+    background-color: $secondary-color;
+  }
 }

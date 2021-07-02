@@ -2,73 +2,74 @@
   display: flex;
   border-top: 2px solid rgba(188, 208, 229, 0.496913);
   height: 402px;
-}
 
-.footer__logo {
-  width: 143px;
-  height: 29px;
-  margin-top: 40px;
-}
+  &__logo {
+    width: 143px;
+    height: 29px;
+    margin-top: 40px;
+  }
 
-.footer__container {
-  display: flex;
-  margin-top: 105px;
-}
+  &__container {
+    display: flex;
+    margin-top: 105px;
+  }
 
-.footer__description {
-  @include text-formatter();
-}
+  &__description {
+    @include text-formatter();
+  }
 
-.footer__description-input {
-  display: block;
-  width: 280px;
-  height: 57px;
-  @include text-formatter;
-}
+  &__description-input {
+    display: block;
+    width: 280px;
+    height: 57px;
+    @include text-formatter;
+  }
 
-.footer__links {
-  display: flex;
-  flex-direction: column;
-  margin: 0 50px;
-}
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
 
-.footer__links-decorator {
-  text-decoration: 0;
-  @include text-formatter();
-}
-.footer__links-list {
-  list-style-type: none;
-}
+  &__links-decorator {
+    text-decoration: 0;
+    @include text-formatter();
+  }
+  
+  &__links-list {
+    list-style-type: none;
+  }
 
-.footer__input {
-  border: 3px solid #bcd0e5;
-  border-radius: 3px;
-  width: 325px;
-  height: 48px;
-  @include text-formatter();
+  &__input {
+    border: 3px solid #bcd0e5;
+    border-radius: 3px;
+    width: 325px;
+    height: 48px;
+    @include text-formatter();
 
-  color: #bcd0e5;
-}
+    color: #bcd0e5;
+  }
 
-.footer__input-button {
-  width: 131px;
-  height: 39px;
-  background: $secondary-color;
-  border-radius: 4px;
-  border: 0;
-  margin: 20px 0px;
-  @include text-formatter();
-  text-align: center;
-  color: $primary-color;
-}
+  &__input-button {
+    width: 131px;
+    height: 39px;
+    background: $secondary-color;
+    border-radius: 4px;
+    border: 0;
+    margin: 20px 0px;
+    @include text-formatter();
+    text-align: center;
+    color: $primary-color;
+  }
 
-.footer__input-button:hover {
-  background-color: $primary-color;
-  border: 1px solid $secondary-color;
-  color: #000000;
-}
+  &__input-button:hover {
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+    color: #000000;
+  }
 
-.footer__input-container {
-  display: flex;
-  flex-direction: column;
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
