@@ -6,7 +6,7 @@
     size: $font-size;
   }
   line-height: $line-height;
-  color: red; //testing color
+  color:olivedrab //testing color
 }
 
 @mixin title-formatter($font-size: 16px, $line-height: 54px) {
@@ -17,5 +17,5 @@
     weight: bold;
   }
   line-height: $line-height;
-  color: red; //testing color
+  color: purple; //testing color
 }

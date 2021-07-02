@@ -36,6 +36,9 @@
   text-decoration: 0;
   @include text-formatter();
 }
+.footer__links-list {
+  list-style-type: none;
+}
 
 .footer__input {
   border: 3px solid #bcd0e5;

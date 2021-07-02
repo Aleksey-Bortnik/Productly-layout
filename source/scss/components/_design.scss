@@ -5,10 +5,15 @@
 }
 
 .designers__section-description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
   max-width: 486px;
-  @include text-formatter;
+  @include text-formatter(20px, 34px);
 
   .designers__section-title {
+    display:flex;
+    flex-direction: column;
     @include title-formatter;
   }
 
@@ -20,6 +25,6 @@
 .designers__section-image {
   background-image: url("../../source/assets/img/design/design.png");
   width: 520px;
-  height: 573px;
+  height: 574px;
   margin-left: 5%;
 }

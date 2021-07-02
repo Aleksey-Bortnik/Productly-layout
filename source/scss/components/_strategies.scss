@@ -55,12 +55,13 @@
 }
 
 .circle {
+  list-style-type: none;
   text-align: center;
   width: 16px;
   height: 16px;
   border: 1px sold #efefef;
   border-radius: 50%;
-  background-color: #efefef;
+  background-color: #ddd4d4;
   margin: 5px;
   margin-bottom: 120px;
 }

@@ -18,55 +18,16 @@
 
 @import "./components//footer";
 
-
 .site__content-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
- width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
-.header__section-container,
-.banner__section-container,
-.tools__section-container,
-.designers__section-container,
-.product-manager__section-container,
-.marketers__section-container,
-.strategies__section-container,
-.tools__section-container,
-.footer__section-container {
+.block__container {
+  display: flex;
   max-width: 1400px;
 }
-
-// .banner__section-container {
-//   max-width: 1400px;
-// }
-
-// .tools__section-container {
-//   max-width: 1400px;
-// }
-
-// .designers__section-container {
-//   max-width: 1400px;
-// }
-
-// .product-manager__section-container {
-//   max-width: 1400px;
-// }
-
-// .marketers__section-container {
-//   max-width: 1400px;
-// }
-
-// .strategies__section-container {
-//   max-width: 1400px;
-// }
-
-// .tools__section-container {
-//   max-width: 1400px;
-// }
-
-// .footer__section-container {
-//   max-width: 1400px;
-// }

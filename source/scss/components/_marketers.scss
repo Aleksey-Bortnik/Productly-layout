@@ -9,7 +9,9 @@
     @include text-formatter;
 
     .marketers__section-title {
-      @include title-formatter ();
+      display: flex;
+      flex-direction: column;
+      @include title-formatter();
     }
 
     .marketers__section-text {
