@@ -1,3 +1,5 @@
+@import "./base/normalize";
+
 @import "./abstracts/variables";
 
 @import "./abstracts/mixins";
@@ -6,28 +8,32 @@
 
 @import "./components/banner";
 
-@import "./components//tools";
+@import "./components/tools";
 
-@import "./components//design";
+@import "./components/design";
 
-@import "./components//product";
+@import "./components/product";
 
-@import "./components//marketers";
+@import "./components/marketers"; //????
 
-@import "./components//strategies";
+@import "./components/strategies";
 
-@import "./components//footer";
+@import "./components/footer";
+
+* {
+  box-sizing: border-box;
+}
 
 .site__content-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0;
-  width: 100%;
+  @include text-formatter;
 }
 
 .block__container {
   display: flex;
+  width: 100%;
   max-width: 1400px;
 }

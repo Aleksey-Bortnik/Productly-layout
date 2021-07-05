@@ -10,19 +10,16 @@
   }
 
   &__container {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     margin-top: 105px;
-  }
-
-  &__description {
-    @include text-formatter();
   }
 
   &__description-input {
     display: block;
     width: 280px;
     height: 57px;
-    @include text-formatter;
   }
 
   &__links {
@@ -33,7 +30,6 @@
 
   &__links-decorator {
     text-decoration: 0;
-    @include text-formatter();
   }
   
   &__links-list {
@@ -41,13 +37,11 @@
   }
 
   &__input {
-    border: 3px solid #bcd0e5;
+    border: 3px solid $border-color;
     border-radius: 3px;
     width: 325px;
     height: 48px;
-    @include text-formatter();
-
-    color: #bcd0e5;
+    color: $border-color;
   }
 
   &__input-button {
@@ -57,7 +51,6 @@
     border-radius: 4px;
     border: 0;
     margin: 20px 0px;
-    @include text-formatter();
     text-align: center;
     color: $primary-color;
   }

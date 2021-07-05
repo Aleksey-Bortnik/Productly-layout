@@ -1,0 +1,55 @@
+.title adjuster {
+  @include title-formatter;
+  font-size: 44px;
+}
+
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    width: 518px;
+    height: 108px;
+  }
+
+  &__text {
+    width: 458px;
+    height: 95px;
+    padding-right: 120px;
+  }
+
+  &__image {
+    background-image: url("../assets/img/banner/banner.png");
+    width: 605px;
+    height: 496px;
+    background-position: center;
+  }
+
+  &__buttons-container {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  &__start-button {
+    @include button-main-type;
+    padding: 10px 30px;
+  }
+
+  &__video-link {
+    width: 179px;
+    height: 53px;
+    margin: 0 30px;
+    text-decoration-line: underline;
+    color: $secondary-color;
+    background: 0;
+    border: 0;
+  }
+
+  &__video-link::before {
+    content: url("../assets/img/banner/banner-button-triangle.png");
+    margin: 0 8px;
+  }
+}

@@ -1,0 +1,61 @@
+.tools-section {
+  display: flex;
+  flex-direction: column;
+
+  &__title-wrap {
+    display: flex;
+    align-self: center;
+  }
+
+  &__title {
+    max-width: 539px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cards-indentation {
+    display: block;
+    text-align: left;
+    max-width: 240px;
+  }
+
+  &__card-click {
+    background-image: url("../assets/img/tools/tools-cursor.png");
+    width: 50px;
+    height: 50px;
+  }
+
+  &__card-social {
+    background-image: url("../assets/img/tools/tools-social.png");
+    width: 50px;
+    height: 50px;
+  }
+
+  &__card-preference {
+    background-image: url("../assets/img/tools/tools-heart.png");
+    width: 50px;
+    height: 50px;
+  }
+
+  &__card-clock {
+    background-image: url("../assets/img/tools/tools-clock.png");
+    width: 50px;
+    height: 50px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    align-self: center;
+    margin-bottom: 68px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    @include button-main-type;
+  }
+}

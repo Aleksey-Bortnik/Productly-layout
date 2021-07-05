@@ -1,34 +1,29 @@
-.product-manager__section {
+.product-manager-section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
 
-  &-description {
+  &__text-block {
     max-width: 486px;
   }
 
-  &-title {
-    @include title-formatter;
-  }
-
-  &-text {
+  &__text {
     display: block;
     width: 385px;
-    @include text-formatter;
   }
 
-  &-text-wrapper {
+  &__text-wrapper {
     display: flex;
   }
 
-  &-icon {
+  &__icon {
     width: 35px;
     height: 35px;
     margin: 10px 24px 0 0;
   }
 
-  &-image {
-    background-image: url("../../source/assets/img/product/product.png");
+  &__image {
+    background-image: url("../assets/img/product/product.png");
     width: 534px;
     height: 521px;
     margin-right: 102px;

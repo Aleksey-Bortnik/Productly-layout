@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./dist/style/normalize.css">
   <link rel="stylesheet" href="./dist/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +16,10 @@
 
 <body class="site__content-container">
 
-  <header class="header__container" class="block__container">
+  <header class="header__container block__container">
 
     <div class="logo__container">
-      <img src="./source/assets/img/logo/logo.png" alt="logo"></img>
+      <img class="logo__image" src="./assets/img/logo/logo.png" alt="logo" />
     </div>
 
     <div class="nav__container">
@@ -39,193 +38,190 @@
     </div>
   </header>
 
-  <section class="banner__section" class="block__container">
+  <section class="banner-section block__container">
 
-    <div class="banner__section-description">
+    <div class="banner-section__text-block title adjuster">
 
-      <h2 class="banner__section-title">The Design Thinking Superpowers
-        <span class="banner__section-text">Tools, tutorials, design and innovation experts,
+      <h2 class="banner-section__title">The Design Thinking Superpowers
+        <span class="banner-section__text">Tools, tutorials, design and innovation experts,
           all in one place! The most
           intuitive way to imagine your
           next user experience.</span>
       </h2>
 
-      <div class="banner__section-buttons-container">
-        <button class="banner__section-start-button">Get started</button>
-        <button class="banner__section-video-link">Watch the video</button>
+      <div class="banner-section__buttons-container">
+        <button class="banner-section__start-button">Get started</button>
+        <button class="banner-section__video-link">Watch the video</button>
       </div>
     </div>
 
-    <div class="banner__section-image"></div>
+    <div class="banner-section__image"></div>
   </section>
 
-  <section class="tools__section" class="block__container">
+  <section class="tools-section block__container">
 
-    <div class="tools__section-title-wrap">
-      <h2 class="tools__section-title">We design tools to unveil
+    <div class="tools-section__title-wrap">
+      <h2 class="tools-section__title">We design tools to unveil
         your Superpowers
       </h2>
     </div>
 
-    <div class="tools__section-cards-container" class="block__container">
+    <div class="tools-section__cards-container ">
 
-      <article>
-        <div class="tools__section-card-click"></div>
-        <h5 class="tools-card-description">First click tests</h5>
+      <article class="tools-section__cards-indentation">
+        <div class="tools-section__card-click"></div>
+        <h5 class="tools__card-description">First click tests</h5>
         <p class="tools__card-text">While most people enjoy casino gambling,</p>
       </article>
 
-      <article>
-        <div class="tools__section-card-social"></div>
+      <article class="tools-section__cards-indentation">
+        <div class="tools-section__card-social"></div>
         <h5 class="tools-card-description">Design surveys</h5>
         <p class="tools__card-text">Sports betting, lottery and bingo playing for the fun</p>
       </article>
 
-      <article>
-        <div class="tools__section-card-preference"></div>
+      <article class="tools-section__cards-indentation">
+        <div class="tools-section__card-preference"></div>
         <h5 class="tools-card-description">Preference tests</h5>
         <p class="tools__card-text">The Myspace page defines the individual.</p>
       </article>
 
-      <article>
-        <div class="tools__section-card-clock"></div>
+      <article class="tools-section__cards-indentation">
+        <div class="tools-section__card-clock"></div>
         <h5 class="tools-card-description">Five second tests</h5>
-        <p class="tools__card-text">Personal choices and the overall personality of the person. </p>
+        <p class="tools-card-text">Personal choices and the overall personality of the person. </p>
       </article>
 
     </div>
 
-    <div class="tools__section-button-wrapper">
-      <button class="tools__section-button">SIGN UP NOW</button>
+    <div class="tools-section__button-wrapper">
+      <button class="tools-section__button">SIGN UP NOW</button>
     </div>
   </section>
 
-  <section class="designers__section" class="block__container">
-    <div class="designers__section-description">
+  <section class="designers-section block__container">
+    <div class="designers-section__text-block">
 
-      <h2 class="designers__section-title">
-        <span class="designers__section-text">Effortless Validation for</span>
+      <h2 class="designers-section__title">
+        <span class="designers-section__text">Effortless Validation for</span>
         Designers
       </h2>
 
-      <p class="designers__section-text">The Myspace page defines the individual, his or her characteristics, traits,
+      <p class="designers-section__text">The Myspace page defines the individual, his or her characteristics, traits,
         personal choices and the overall
         personality of the person. </p>
 
-      <h6 class="designers__section-description">Accessory makers</h6>
-      <p class="designers__section-text">While most people enjoy casino gambling,
+      <h6 class="designers-section__description">Accessory makers</h6>
+      <p class="designers-section-text">While most people enjoy casino gambling,
         sports betting, lottery and bingo playing for the fun</p>
 
-      <h6 class="designers__section-description">Alterationists</h6>
-      <p class="designers__section-text">If you are looking for a new way to promote your business
+      <h6 class="designers-section__description">Alterationists</h6>
+      <p class="designers-section__text">If you are looking for a new way to promote your business
         that won’t cost you more money, </p>
 
-      <h6 class="designers__section-description">Custom Design designers</h6>
-      <p class="designers__section-text">If you are looking for a new way to promote your business
+      <h6 class="designers-section__description">Custom Design designers</h6>
+      <p class="designers-section__text">If you are looking for a new way to promote your business
         that won’t cost you more money, </p>
     </div>
 
-    <div class="designers__section-image">
+    <div class="designers-section__image">
     </div>
   </section>
 
-  <section class="product-manager__section" class="block__container">
-    <div class="product-manager__section-image">
+  <section class="product-manager-section block__container">
+    <div class="product-manager-section__image">
     </div>
 
-    <div class="product-manager__section-description">
+    <div class="product-manager-section__text-block">
 
-      <h2 class="product-manager__section-title">
-        <span class="product-manager__section-text">Easier decision making for</span>
+      <h2 class="product-manager-section__title">
+        <span class="product-manager-section__text">Easier decision making for</span>
         Product Managers
       </h2>
 
-      <p class="product-manager__section-text">The Myspace page defines the individual, his or her characteristics,
+      <p class="product-manager-section__text">The Myspace page defines the individual, his or her characteristics,
         traits,
         personal choices and the overall
         personality of the person. </p>
 
-      <div class="product-manager__section-text-wrapper">
-        <img class="product-manager__section-icon" src="./source/assets/img/product/product_icon.png"></img>
-        <p class="product-manager__section-text">Never worry about overpaying for your energy again.</p>
+      <div class="product-manager-section__text-wrapper">
+        <img class="product-manager-section__icon" src="./assets/img/product/product_icon.png"></img>
+        <p class="product-manager-section-text">Never worry about overpaying for your energy again.</p>
       </div>
 
-      <div class="product-manager__section-text-wrapper">
-        <img class="product-manager__section-icon" src="./source/assets/img/product/product_icon.png"></img>
-        <p class="product-manager__section-text">We will only switch you to energy companies that we trust and will
+      <div class="product-manager-section__text-wrapper">
+        <img class="product-manager-section__icon" src="./assets/img/product/product_icon.png"></img>
+        <p class="product-manager-section__text">We will only switch you to energy companies that we trust and will
           treat you right</p>
       </div>
 
-      <div class="product-manager__section-text-wrapper">
-        <img class="product-manager__section-icon" src="./source/assets/img/product/product_icon.png"></img>
-        <p class="product-manager__section-text">We track the markets daily and know where the savings are.</p>
+      <div class="product-manager-section__text-wrapper">
+        <img class="product-manager-section__icon" src="./assets/img/product/product_icon.png"></img>
+        <p class="product-manager-section__text">We track the markets daily and know where the savings are.</p>
       </div>
 
     </div>
     </div>
   </section>
 
+  <section class="marketers-section block__container">
+    <div class="marketers-section__text-block">
 
-
-  <section class="marketers__section" class="block__container">
-    <div class="marketers__section-description">
-
-      <h2 class="marketers__section-title">
-        <span class="marketers__section-text">Optimization for</span>
+      <h2 class="marketers-section__title">
+        <span class="marketers-section__text">Optimization for</span>
         Marketers
       </h2>
 
-      <p class="marketers__section-text">Few would argue that, despite the advancements of feminism over the past
+      <p class="marketers-section__text">Few would argue that, despite the advancements of feminism over the past
         three decades, women still face a
         double standard when it comes to their behavior. </p>
 
-      <h6 class="marketers__section-title">Accessory makers</h6>
-      <p class="marketers__section-text">While most people enjoy casino gambling,
+      <h6 class="marketers-section__title">Accessory makers</h6>
+      <p class="marketers-section__text">While most people enjoy casino gambling,
         sports betting, lottery and bingo playing for the fun</p>
 
-      <h6 class="marketers__section-title">Alterationists</h6>
-      <p class="marketers__section-text">If you are looking for a new way to promote your business
+      <h6 class="marketers-section__title">Alterationists</h6>
+      <p class="marketers-section__text">If you are looking for a new way to promote your business
         that won’t cost you more money, </p>
 
-      <h6 class="marketers__section-title">Custom Design designers</h6>
-      <p class="marketers__section-text">If you are looking for a new way to promote your business
+      <h6 class="marketers-section__title">Custom Design designers</h6>
+      <p class="marketers-section__text">If you are looking for a new way to promote your business
         that won’t cost you more money, </p>
     </div>
 
-    <div class="marketers__section-image"></div>
+    <div class="marketers-section__image"></div>
   </section>
+  
+  <section class="strategies-section block__container">
 
-
-  <section class="strategies__section" class="block__container">
-
-    <div class="strategies__section-title-block">
-      <h3 class="strategies__section-title">Marketing Strategies</h3>
-      <p class="strategies__section-description">Join 40,000+ other marketers and get proven strategies on email
+    <div class="strategies-section__title-block">
+      <h3 class="strategies-section__title">Marketing Strategies</h3>
+      <p class="strategies-section__description">Join 40,000+ other marketers and get proven strategies on email
         marketing</p>
     </div>
 
-    <div class="strategies__section-cards-container">
+    <div class="strategies-section__cards-container">
 
-      <article class="strategies__section-card">
-        <div class="strategies__section-image-search"></div>
-        <p>By <span class="strategies__section-accent">Abdullah |</span> 03 March 2019</p>
-        <h4 class="strategies__section-title">Increasing Prosperity With Positive Thinking</h4>
+      <article class="strategies-section__card">
+        <div class="strategies-section__image-search"></div>
+        <p>By <span class="strategies-section__accent">Abdullah |</span> 03 March 2019</p>
+        <h4 class="strategies-section__title">Increasing Prosperity With Positive Thinking</h4>
       </article>
 
       <article>
-        <div class="strategies__section-image-structure"></div>
-        <p>By <span class="strategies__section-accent">Abdullah |</span> 03 March 2019</p>
-        <h4 class="strategies__section-title">Motivation Is The First Step To Success</h4>
+        <div class="strategies-section__image-structure"></div>
+        <p>By <span class="strategies-section__accent">Abdullah |</span> 03 March 2019</p>
+        <h4 class="strategies-section__title">Motivation Is The First Step To Success</h4>
       </article>
 
       <article>
-        <div class="strategies__section-image-time"></div>
-        <p>By <span class="strategies__section-accent">Abdullah |</span> 03 March 2019</p>
-        <h4 class="strategies__section-title">Success Steps For Your Personal Or Business Life</h4>
+        <div class="strategies-section__image-time"></div>
+        <p>By <span class="strategies-section__accent">Abdullah |</span> 03 March 2019</p>
+        <h4 class="strategies-section__title">Success Steps For Your Personal Or Business Life</h4>
       </article>
     </div>
 
-    <ul class=" strategies__section-carousell">
+    <ul class=" strategies-section__carousell">
 
       <li class="circle"></li>
       <li class="circle"></li>
@@ -234,11 +230,11 @@
     </ul>
 
   </section>
-
-  <footer class="footer" class="block__container">
+  <!-- =================================================================================================================== -->
+  <footer class="footer block__container">
     <div class="footer__container">
-      <div>
-        <img class="footer-logo" src="../../source/assets/img/logo/logo.png" alt="site logo">
+      <div class="footer__logo-container">
+        <img class="footer-logo" src="./assets/img/logo/logo.png" alt="site logo">
       </div>
       <ul class="footer__links">
 
@@ -269,6 +265,7 @@
       </div>
     </div>
   </footer>
+  <!-- ===================================================================================== -->
 </body>
 
 </html>

@@ -1,0 +1,56 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+  width: 1400px;
+}
+
+.logo__image {
+  margin-top: 8px;
+  width: 188px;
+  height: 32px;
+}
+
+.nav__container {
+  display: flex;
+}
+
+.nav__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  padding-top: 8px;
+  text-decoration: 0;
+  margin: 0 15px;
+  min-width: 66px;
+  // @include text-formatter;
+}
+
+.nav__btn-container {
+  display: flex;
+}
+
+.nav__container-button-in {
+  @include button-main-type;
+  background-color: $primary-color;
+  border: 1px solid $border-color;
+  color: $text-color;
+  margin: 0 15px 0 0;
+  
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.nav__container-button-up {
+  @include button-main-type;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $logo-color;
+  }
+}
