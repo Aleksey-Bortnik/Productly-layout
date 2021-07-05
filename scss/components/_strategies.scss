@@ -30,7 +30,7 @@
 
   &__title {
     display: block;
-    @include text-formatter;
+    @include title-formatter(34px, 51px);
   }
 
   &__title:hover {

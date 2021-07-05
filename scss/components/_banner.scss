@@ -1,24 +1,23 @@
-.title adjuster {
-  @include title-formatter;
-  font-size: 44px;
-}
-
 .banner-section {
   display: flex;
   justify-content: space-between;
   margin: 0;
 
   &__title {
+    @include title-formatter(44px, 54px);
     display: flex;
     flex-direction: column;
     width: 518px;
     height: 108px;
+    margin-bottom: 158px;
   }
 
   &__text {
+    @include text-formatter;
     width: 458px;
     height: 95px;
     padding-right: 120px;
+    margin: 30px 0;
   }
 
   &__image {

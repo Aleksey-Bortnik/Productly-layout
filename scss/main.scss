@@ -37,3 +37,22 @@
   width: 100%;
   max-width: 1400px;
 }
+
+.primary-title {
+  @include title-formatter();
+}
+
+.secondary-title {
+@include title-formatter (22px, 33px);
+font-weight: 600;
+margin: 13px 0;
+}
+
+.blocks-title {
+  @include title-formatter(16px, 26px);
+  margin: 12px 0;
+}
+
+.blocks-title {
+  @include title-formatter (16px, 54px);
+}

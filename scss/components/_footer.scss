@@ -16,6 +16,11 @@
     margin-top: 105px;
   }
 
+  &__description {
+    @include title-formatter(20px, 30px);
+    font-weight: 900;
+  }
+
   &__description-input {
     display: block;
     width: 280px;
