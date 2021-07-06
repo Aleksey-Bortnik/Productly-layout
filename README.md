@@ -1,6 +1,4 @@
-# Productly-layout
-
-Project title:
+Project title: 
 Layout of the adaptive landing page.
 
 Motivation:
@@ -18,4 +16,3 @@ Built with:
 preprocessor sass,
 task manager gulp.
 hope...
-
