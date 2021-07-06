@@ -9,7 +9,7 @@
 
   &__text {
     display: block;
-    width: 385px;
+    max-width: 385px;
   }
 
   &__text-wrapper {
@@ -23,7 +23,7 @@
   }
 
   &__image {
-    width: 534px;
+    max-width: 534px;
     height: 521px;
     margin-right: 102px;
   }

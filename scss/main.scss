@@ -20,44 +20,4 @@
 
 @import "./components/footer";
 
-* {
-  box-sizing: border-box;
-}
-
-.site__content-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  @include text-formatter;
-}
-
-.block__container {
-  display: flex;
-  width: 100%;
-  max-width: 1400px;
-}
-
-.primary-title {
-  @include title-formatter();
-}
-
-.secondary-title {
-@include title-formatter (22px, 33px);
-font-weight: 600;
-margin: 13px 0;
-}
-
-.blocks-title {
-  @include title-formatter(16px, 26px);
-  margin: 12px 0;
-}
-
-.blocks-title {
-  @include title-formatter (16px, 54px);
-}
-
-.common-text-index {
-@include title-formatter(16px, 24px);
-font-weight: 500;
-}
+@import "./base/common_selectors";
