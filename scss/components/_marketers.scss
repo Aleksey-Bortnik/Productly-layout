@@ -6,11 +6,11 @@
 
   &__text-block {
     max-width: 486px;
-
-    &__title {
-      display: flex;
-      flex-direction: column;
-    }
+  }
+  
+  &__title {
+    display: flex;
+    flex-direction: column;
   }
 
   &__image {

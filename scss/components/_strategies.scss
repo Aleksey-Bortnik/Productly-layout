@@ -27,10 +27,15 @@
   &__accent {
     font-weight: 700;
   }
+  
+  &__title-formater {
+    font-size: 34px;
+    line-height: 51px;
+  }
 
   &__title {
     display: block;
-    @include title-formatter(34px, 51px);
+    @include title-formatter(24px, 34px);
   }
 
   &__title:hover {
