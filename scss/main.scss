@@ -56,3 +56,8 @@ margin: 13px 0;
 .blocks-title {
   @include title-formatter (16px, 54px);
 }
+
+.common-text-index {
+@include title-formatter(16px, 24px);
+font-weight: 500;
+}
