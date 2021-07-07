@@ -39,3 +39,7 @@
   @include title-formatter(16px, 24px);
   font-weight: 500;
 }
+
+.common-btn-styles {
+  @include button-main-type;
+}
