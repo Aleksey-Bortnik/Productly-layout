@@ -7,25 +7,13 @@
     justify-content: space-between;
   }
 
-  &__card{
+  &__card {
     max-width: 348px;
   }
 
-  &__image-search {
+  &__image-proportions {
     max-width: 348px;
-    height: 185px;
     margin-right: 25px;
-  }
-
-  &__image-structure {
-    max-width: 348px;
-    height: 185px;
-    margin-right: 25px;
-  }
-
-  &__image-time {
-    max-width: 348px;
-    height: 185px;
   }
 
   &__accent {

@@ -1,13 +1,12 @@
 .marketers-section {
   display: flex;
   justify-content: space-between;
-  max-height: 609px;
   margin-bottom: 170px;
 
   &__text-block {
     max-width: 486px;
   }
-  
+
   &__title {
     display: flex;
     flex-direction: column;
@@ -15,6 +14,6 @@
 
   &__image {
     max-width: 542px;
-    height: 609px;
+    max-height: 609px;
   }
 }

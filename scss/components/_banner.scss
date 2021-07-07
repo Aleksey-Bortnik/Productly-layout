@@ -8,21 +8,19 @@
     display: flex;
     flex-direction: column;
     max-width: 518px;
-    height: 108px;
+    max-height: 108px;
     margin: 89px 0 170px 0;
   }
 
   &__text {
     @include text-formatter;
     max-width: 458px;
-    height: 95px;
     padding-right: 120px;
     margin: 30px 0;
   }
 
   &__image {
     max-width: 605px;
-    height: 496px;
     background-position: center;
   }
 
@@ -37,7 +35,6 @@
 
   &__video-link {
     width: 179px;
-    height: 53px;
     margin: 0 30px;
     text-decoration-line: underline;
     color: $secondary-color;

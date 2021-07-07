@@ -38,7 +38,7 @@
   color: $text-color;
   padding: 10px 20px;
   margin: 0 15px 0 0;
-  
+
   &:hover {
     background-color: $secondary-color;
     color: $primary-color;
@@ -47,6 +47,6 @@
 
 .nav__container-button-sign-up {
   &:hover {
-   @include button-hover;
+    @include button-hover;
   }
 }
