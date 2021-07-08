@@ -1,0 +1,19 @@
+.marketers-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 170px;
+
+  &__text-block {
+    max-width: 486px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    max-width: 542px;
+    max-height: 609px;
+  }
+}

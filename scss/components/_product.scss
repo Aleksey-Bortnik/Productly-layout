@@ -1,0 +1,29 @@
+.product-manager-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+
+  &__text-block {
+    max-width: 486px;
+  }
+
+  &__text {
+    display: block;
+    max-width: 385px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+  }
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+    margin: 10px 24px 0 0;
+  }
+
+  &__image {
+    max-width: 534px;
+    margin-right: 102px;
+  }
+}

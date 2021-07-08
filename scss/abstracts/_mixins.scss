@@ -1,0 +1,39 @@
+@mixin text-formatter($font-size: 16px, $line-height: 28px) {
+  font: {
+    family: Poppins;
+    style: normal;
+    weight: 500;
+    size: $font-size;
+  }
+  line-height: $line-height;
+  color: $text-color;
+}
+
+@mixin title-formatter($font-size: 36px, $line-height: 54px) {
+  font: {
+    size: $font-size;
+    family: Poppins;
+    style: normal;
+    weight: 700;
+  }
+  line-height: $line-height;
+  color: $title-color;
+}
+
+@mixin button-main-type() {
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Poppins;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 0;
+}
+
+@mixin button-hover {
+  background-color: $primary-color;
+  color: $text-color;
+  box-shadow: 1px 2px 4px 2px gray;
+}

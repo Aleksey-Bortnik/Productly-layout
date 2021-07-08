@@ -1,0 +1,57 @@
+.strategies-section {
+  display: flex;
+  flex-direction: column;
+
+  &__cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 348px;
+  }
+
+  &__image-proportions {
+    max-width: 348px;
+    margin-right: 25px;
+  }
+
+  &__accent {
+    font-weight: 700;
+  }
+
+  &__title-formater {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  &__title {
+    display: block;
+    @include title-formatter(24px, 34px);
+  }
+
+  &__title:hover {
+    color: $secondary-color;
+  }
+
+  &__carousell {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.circle {
+  list-style-type: none;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border: 1px sold $border-color;
+  border-radius: 50%;
+  background-color: $circle-back-color;
+  margin: 5px;
+  margin-bottom: 120px;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

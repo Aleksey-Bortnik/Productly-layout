@@ -1,0 +1,69 @@
+.footer {
+  display: flex;
+  border-top: 2px solid $border-color;
+  height: 402px;
+
+  &__logo {
+    max-width: 143px;
+    height: 29px;
+    margin-top: 40px;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+  }
+
+  &__description {
+    @include title-formatter(20px, 30px);
+    font-weight: 900;
+  }
+
+  &__description-input {
+    display: block;
+    max-width: 280px;
+    height: 57px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+
+  &__links-decorator {
+    text-decoration: 0;
+  }
+  
+  &__links-list {
+    list-style-type: none;
+  }
+
+  &__input {
+    border: 3px solid $border-color;
+    border-radius: 3px;
+    max-width: 325px;
+    height: 48px;
+    color: $border-color;
+    margin-bottom: 30px;
+  }
+
+  &__input-button {
+    @include button-main-type;
+    max-width: 142px;
+    max-height: 40px;
+    line-height: 24px;
+  }
+
+  &__input-button:hover {
+    @include button-hover;
+    
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

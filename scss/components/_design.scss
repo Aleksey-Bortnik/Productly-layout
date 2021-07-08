@@ -1,0 +1,24 @@
+.designers-section {
+  display: flex;
+  justify-content: space-between;
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 486px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__designers-section__text {
+    font-size: 1em;
+  }
+
+  &__image {
+    max-width: 520px;
+    max-height: 574px;
+  }
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.site__content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include text-formatter;
+}
+
+.block__container {
+  display: flex;
+  width: 100%;
+  max-width: 1126px;
+}
+
+.common-btn-styles {
+  @include button-main-type;
+}

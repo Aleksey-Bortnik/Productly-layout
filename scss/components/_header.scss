@@ -1,0 +1,52 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 40px 0;
+  max-width: 1400px;
+}
+
+.logo__image {
+  margin-top: 8px;
+  max-width: 188px;
+  max-height: 32px;
+}
+
+.nav__container {
+  display: flex;
+  margin-right: 22px;
+}
+
+.nav__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  padding-top: 8px;
+  text-decoration: 0;
+  margin: 0 15px;
+  min-width: 66px;
+}
+
+.nav__btn-container {
+  display: flex;
+}
+
+.nav__container-button-sign-in {
+  background-color: $primary-color;
+  border: 1px solid $border-color;
+  color: $text-color;
+  padding: 10px 20px;
+  margin: 0 15px 0 0;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.nav__container-button-sign-up {
+  &:hover {
+    @include button-hover;
+  }
+}

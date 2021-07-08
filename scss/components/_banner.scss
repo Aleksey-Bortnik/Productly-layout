@@ -1,0 +1,49 @@
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  &__title {
+    @include title-formatter(44px, 54px);
+    display: flex;
+    flex-direction: column;
+    max-width: 518px;
+    max-height: 108px;
+    margin: 89px 0 170px 0;
+  }
+
+  &__text {
+    @include text-formatter;
+    max-width: 458px;
+    padding-right: 120px;
+    margin: 30px 0;
+  }
+
+  &__image {
+    max-width: 605px;
+    background-position: center;
+  }
+
+  &__buttons-container {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  &__start-button {
+    padding: 10px 30px;
+  }
+
+  &__video-link {
+    width: 179px;
+    margin: 0 30px;
+    text-decoration-line: underline;
+    color: $secondary-color;
+    background: 0;
+    border: 0;
+  }
+
+  &__video-link::before {
+    content: url("../assets/img/banner/banner-button-triangle.png");
+    margin: 0 8px;
+  }
+}
