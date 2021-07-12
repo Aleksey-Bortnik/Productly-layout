@@ -20,6 +20,10 @@
   &__img-container {
     max-width: 520px;
     max-height: 574px;
+
+    @include media-small-desktop {
+      max-width: 460px;
+    }
   }
 
   &__image {

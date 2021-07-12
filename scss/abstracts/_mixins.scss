@@ -38,18 +38,9 @@
   box-shadow: 1px 2px 4px 2px gray;
 }
 
-
 //responsive==========================
 @mixin media-desktop {
   @media (max-width: 1200px) {
-    @content;
-  }
-}
-
-//! Transition screen sizes - created for not full-screen browser.
-
-@mixin media-small-desktop {
-  @media (max-width: 1000px) {
     @content;
   }
 }
@@ -68,6 +59,25 @@
 
 @mixin media-mobilesmall {
   @media (max-width: 320px) {
+    @content;
+  }
+}
+
+//! Transition screen sizes - created for not full-screen browser.
+@mixin media-middle-desktop {
+  @media (max-width: 1160px) {
+    @content;
+  }
+}
+
+@mixin media-small-desktop {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin media-small-desktop-footer-transform {
+  @media (max-width: 1050px) {
     @content;
   }
 }

@@ -1,7 +1,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 40px 0;
+  
   max-width: 1400px;
 }
 
@@ -14,15 +14,15 @@
 .nav__container {
   display: flex;
   margin-right: 22px;
-
-  @include media-tablet {
-    display: none;
-  }
 }
 
 .nav__block {
   display: flex;
   justify-content: space-between;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .nav__link {

@@ -14,6 +14,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 105px;
+
+    @include media-small-desktop-footer-transform {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__description {
@@ -31,14 +37,32 @@
     display: flex;
     flex-direction: column;
     margin: 0 50px;
+
+    @include media-small-desktop-footer-transform {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
 
   &__links-decorator {
     text-decoration: 0;
+
+    @include media-small-desktop-footer-transform {
+      padding: 0 5px;
+    }
   }
-  
+
   &__links-list {
     list-style-type: none;
+  }
+
+  &__links-block {
+    @include media-small-desktop-footer-transform {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
 
   &__input {
@@ -50,16 +74,26 @@
     margin-bottom: 30px;
   }
 
+  &__input-container {
+    @include media-small-desktop-footer-transform {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
   &__input-button {
     @include button-main-type;
     max-width: 142px;
     max-height: 40px;
     line-height: 24px;
+
+    @include media-small-desktop-footer-transform {
+      margin-bottom: 20px;
+    }
   }
 
   &__input-button:hover {
     @include button-hover;
-    
   }
 
   &__input-container {

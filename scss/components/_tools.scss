@@ -4,6 +4,10 @@
   background: url(../assets/img/tools/background.png) center bottom no-repeat;
   margin-bottom: 146px;
 
+  @include media-small-desktop {
+    margin-bottom: 60px;
+  }
+
   &__title-wrap {
     display: flex;
     align-self: center;
