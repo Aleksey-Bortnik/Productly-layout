@@ -3,8 +3,22 @@
   justify-content: space-between;
   margin-bottom: 170px;
 
+  @include media-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
   &__text-block {
     max-width: 486px;
+
+    @include media-mobile-small {
+      margin-right: 0;
+      padding-right: 0;
+      min-width: 380px;
+      font-size: 20px;
+    }
   }
 
   &__title {

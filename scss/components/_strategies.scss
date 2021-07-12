@@ -5,6 +5,10 @@
   &__cards-container {
     display: flex;
     justify-content: space-between;
+
+    @include media-mobile {
+      margin-left: 48px;
+    }
   }
 
   &__card {
@@ -13,6 +17,12 @@
 
   &__third-card {
     @include media-small-desktop {
+      display: none;
+    }
+  }
+
+  &__second-card {
+    @include media-mobile {
       display: none;
     }
   }
