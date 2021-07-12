@@ -10,6 +10,10 @@
     max-width: 518px;
     max-height: 108px;
     margin: 89px 0 170px 0;
+
+    @include media-tablet {
+      margin-bottom: 250px;
+    }
   }
 
   &__text {
@@ -41,7 +45,7 @@
   &__start-button {
     padding: 10px 30px;
 
-    &:hover{
+    &:hover {
       @include button-hover;
     }
   }
@@ -54,7 +58,7 @@
     background: 0;
     border: 0;
 
-    &:hover{
+    &:hover {
       background-color: $logo-color;
       border-radius: 4px;
       font-size: 20px;

@@ -22,12 +22,21 @@
   &__cards-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-tablet {
+      margin-left: 10px;
+    }
   }
 
   &__cards-indentation {
     display: block;
     text-align: left;
     max-width: 240px;
+
+    @include media-tablet {
+      min-width: 50%;
+    }
   }
 
   &__icon-proportions {
