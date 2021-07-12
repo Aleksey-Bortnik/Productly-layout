@@ -12,8 +12,12 @@
     flex-direction: column;
   }
 
-  &__image {
+  &__img-container {
     max-width: 542px;
     max-height: 609px;
+  }
+
+  &__image {
+    width: 100%;
   }
 }

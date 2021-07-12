@@ -22,8 +22,12 @@
     margin: 10px 24px 0 0;
   }
 
-  &__image {
+  &__img-container {
     max-width: 534px;
     margin-right: 102px;
+  }
+
+  &__image {
+    width: 100%;
   }
 }

@@ -17,8 +17,12 @@
     font-size: 1em;
   }
 
-  &__image {
+  &__img-container {
     max-width: 520px;
     max-height: 574px;
+  }
+
+  &__image {
+    width: 100%;
   }
 }

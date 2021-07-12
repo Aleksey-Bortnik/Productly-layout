@@ -11,6 +11,13 @@
     max-width: 348px;
   }
 
+
+  &__third-card {
+    @include media-small-desktop {
+      display: none;
+    }
+  }
+
   &__image-proportions {
     max-width: 348px;
     margin-right: 25px;
