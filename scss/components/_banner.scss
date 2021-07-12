@@ -40,6 +40,10 @@
 
   &__start-button {
     padding: 10px 30px;
+
+    &:hover{
+      @include button-hover;
+    }
   }
 
   &__video-link {
@@ -49,6 +53,13 @@
     color: $secondary-color;
     background: 0;
     border: 0;
+
+    &:hover{
+      background-color: $logo-color;
+      border-radius: 4px;
+      font-size: 20px;
+      transition: 0.5s all;
+    }
   }
 
   &__video-link::before {
