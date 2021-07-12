@@ -8,6 +8,11 @@
   justify-content: center;
   flex-direction: column;
   @include text-formatter;
+
+  @include media-small-desktop {
+    margin: 0 25px;
+  }
+
 }
 
 .block__container {

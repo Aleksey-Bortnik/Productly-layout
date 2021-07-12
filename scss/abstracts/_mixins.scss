@@ -35,5 +35,50 @@
 @mixin button-hover {
   background-color: $primary-color;
   color: $text-color;
-  box-shadow: 1px 2px 4px 2px gray;
+  box-shadow: 1px 1px 2px 1px gray;
+  transition: 0.5s all;
+}
+
+//responsive==========================
+@mixin media-desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+//! Transition screen sizes - created for not full-screen browser.
+@mixin media-middle-desktop {
+  @media (max-width: 1160px) {
+    @content;
+  }
+}
+
+@mixin media-small-desktop {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin media-small-desktop-footer-transform {
+  @media (max-width: 1050px) {
+    @content;
+  }
 }

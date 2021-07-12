@@ -1,14 +1,31 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 40px 0;
   max-width: 1400px;
+  margin-top: 20px;
+
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 16px;
+    margin-right: 48px;
+  }
+
+  @include media-mobile-small {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .logo__image {
   margin-top: 8px;
   max-width: 188px;
   max-height: 32px;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .nav__container {
@@ -19,17 +36,27 @@
 .nav__block {
   display: flex;
   justify-content: space-between;
+  margin-right: 20px;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .nav__link {
   padding-top: 8px;
   text-decoration: 0;
+  color: $links-color;
   margin: 0 15px;
   min-width: 66px;
 }
 
 .nav__btn-container {
   display: flex;
+
+  @include media-tablet {
+    margin: 24px 0 0 62px;
+  }
 }
 
 .nav__container-button-sign-in {
@@ -38,9 +65,11 @@
   color: $text-color;
   padding: 10px 20px;
   margin: 0 15px 0 0;
+  border-radius: 4px;
 
   &:hover {
-    background-color: $secondary-color;
+    @include button-hover;
+    background-color: $logo-color;
     color: $primary-color;
   }
 }
@@ -49,4 +78,102 @@
   &:hover {
     @include button-hover;
   }
+}
+
+// =================burger menu=================
+.wrapper {
+  display: none;
+  margin: 200px, auto;
+  width: 320px;
+  position: relative;
+  color: $logo-color;
+  text-align: center;
+  height: 40px;
+  border-radius: 9px;
+
+  @include media-tablet {
+    display: inline-block;
+  }
+}
+
+#check-menu {
+  display: none;
+}
+
+.burger-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 40px;
+}
+
+.burger-line {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 35px;
+  height: 5px;
+  background-color: $logo-color;
+  border-radius: 9px;
+  transition: 0.5s all;
+}
+
+.second,
+.third {
+  top: 18px;
+}
+
+.fourth {
+  top: 28px;
+}
+
+.main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.burger-link {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: $primary-color;
+  text-decoration: none;
+  border-top: 1px solid $border-color;
+  background-color: $logo-color;
+  border-radius: 9px;
+  margin: 2px 0;
+}
+
+#check-menu:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+
+#check-menu:checked ~ .first {
+  display: none;
+}
+
+#check-menu:checked ~ .second {
+  transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third {
+  transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth {
+  display: none;
 }

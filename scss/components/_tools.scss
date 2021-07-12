@@ -4,6 +4,10 @@
   background: url(../assets/img/tools/background.png) center bottom no-repeat;
   margin-bottom: 146px;
 
+  @include media-small-desktop {
+    margin-bottom: 60px;
+  }
+
   &__title-wrap {
     display: flex;
     align-self: center;
@@ -13,17 +17,34 @@
     max-width: 600px;
     text-align: center;
     margin-bottom: 55px;
+
+    @include media-mobile {
+      text-align: left;
+    }
   }
 
   &__cards-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-tablet {
+      margin-left: 10px;
+    }
+
+    @include media-mobile-small{
+      margin-left: 58px;
+    }
   }
 
   &__cards-indentation {
     display: block;
     text-align: left;
     max-width: 240px;
+
+    @include media-tablet {
+      min-width: 50%;
+    }
   }
 
   &__icon-proportions {

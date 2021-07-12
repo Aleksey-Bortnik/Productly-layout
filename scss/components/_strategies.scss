@@ -5,10 +5,26 @@
   &__cards-container {
     display: flex;
     justify-content: space-between;
+
+    @include media-mobile {
+      margin-left: 48px;
+    }
   }
 
   &__card {
     max-width: 348px;
+  }
+
+  &__third-card {
+    @include media-small-desktop {
+      display: none;
+    }
+  }
+
+  &__second-card {
+    @include media-mobile {
+      display: none;
+    }
   }
 
   &__image-proportions {
@@ -32,6 +48,7 @@
 
   &__title:hover {
     color: $secondary-color;
+    transition: 0.5s all;
   }
 
   &__carousell {
@@ -53,5 +70,6 @@
 
   &:hover {
     background-color: $secondary-color;
+    transition: 0.3s all;
   }
 }

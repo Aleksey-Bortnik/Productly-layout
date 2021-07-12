@@ -2,23 +2,55 @@
   display: flex;
   justify-content: space-between;
 
+  @include media-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 18px;
+
+    @include media-mobile-small {
+      font-size: 20px;
+    }
+  }
+
   &__text-block {
     display: flex;
     flex-direction: column;
     max-width: 486px;
+
+    @include media-mobile-small {
+      margin-right: 0;
+      padding-right: 0;
+      min-width: 380px;
+    }
   }
 
   &__title {
     display: flex;
     flex-direction: column;
+
+    @include media-mobile-small {
+      font-size: 24px;
+    }
   }
 
   &__designers-section__text {
     font-size: 1em;
   }
 
-  &__image {
+  &__img-container {
     max-width: 520px;
     max-height: 574px;
+
+    @include media-small-desktop {
+      max-width: 460px;
+    }
+
+    @include media-mobile-small {
+      margin-left: 46px;
+    }
+  }
+
+  &__image {
+    width: 100%;
   }
 }
